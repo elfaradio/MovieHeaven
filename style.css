@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ff0707;
+  --secondary-color: #0a0e27;
+  --background-color: #0d1118;
+  --text-color: #ffffff;
+  --text-secondary: #b8b8c8;
+  --card-bg: #1a1d29;
+  --hover-color: #2a2d39;
+  --border-color: #252836;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+nav {
+  background: linear-gradient(
+    180deg,
+    var(--secondary-color) 0%,
+    transparent 100%
+  );
+  padding: 25px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 650;
+  color: var(--text-color);
+}
+
+#search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box {
+  padding: 10px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 15px;
+  min-width: 300px;
+  outline: none;
+  transition: all 0.3s;
+}
+.search-box:hover {
+  border-color: var(--primary-color);
+}
+.search-btn {
+  padding: 12px 18px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.search-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 4px 12px #ff0707;
+}
